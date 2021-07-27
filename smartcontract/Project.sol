@@ -1,4 +1,4 @@
-pragma solidity 0.8.6;
+pragma solidity 0.5.4;
 
 contract Project {
     
@@ -105,7 +105,7 @@ contract Project {
             contributions[msg.sender] = amountToRefund;
             return false;
         } else {
-            currentBalance = currentBalance.sub(amountToRefund);
+            currentBalance = currentBalance - amountToRefund ; 
         }
 
         return true;
@@ -132,4 +132,4 @@ contract Project {
         currentAmount = currentBalance;
         goalAmount = amountGoal;
     }
-}
+}  
