@@ -43,7 +43,7 @@ contract Project {
     ) public {
         creator = payable(msg.sender);
         amountGoal = goalAmount;
-        raiseBy = block.timestamp + fundRaisingDeadline; // deadline is the current timestamp + number of blocks given 
+        raiseBy = fundRaisingDeadline; // deadline is the current timestamp + number of blocks given 
         currentBalance = 0;
     }
 
